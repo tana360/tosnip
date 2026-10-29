@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /v/
+
+Sitemap: https://tosnip.com/sitemap.xml

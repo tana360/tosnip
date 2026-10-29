@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <script>
+    try {
+      if (localStorage.getItem("spaceur-lang") === "th") {
+        document.documentElement.lang = "th";
+        document.documentElement.classList.add("i18n-wait");
+      }
+    } catch (e) {}
+  </script>
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="Why a screenshot on the clipboard never reaches a CLI, and how ToSnip turns it into a path or a short link." data-i18n-content="metaWhy">
+  <link rel="canonical" href="https://tosnip.com/why/">
+  <link rel="alternate" hreflang="en" href="https://tosnip.com/why/">
+  <link rel="alternate" hreflang="x-default" href="https://tosnip.com/why/">
+  <meta property="og:site_name" content="ToSnip">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="The problem · ToSnip" data-i18n-content="titleWhy">
+  <meta property="og:description" content="Why a screenshot on the clipboard never reaches a CLI, and how ToSnip turns it into a path or a short link." data-i18n-content="metaWhy">
+  <meta property="og:url" content="https://tosnip.com/why/">
+  <meta property="og:image" content="https://tosnip.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ToSnip. Print Screen, then Ctrl+V. The AI sees the picture.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The problem · ToSnip" data-i18n-content="titleWhy">
+  <meta name="twitter:description" content="Why a screenshot on the clipboard never reaches a CLI, and how ToSnip turns it into a path or a short link." data-i18n-content="metaWhy">
+  <meta name="twitter:image" content="https://tosnip.com/og.png">
+  <meta name="twitter:image:alt" content="ToSnip. Print Screen, then Ctrl+V. The AI sees the picture.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>The problem · ToSnip</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "url": "https://tosnip.com/why/",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "A terminal cannot open the clipboard",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Install once on this PC. After that, Ctrl+V in Windows Terminal, PowerShell, PowerShell 7, or CMD writes a JPEG in C:\\ToSnip and types the path at the cursor. The helper does not press Enter. Nothing from this path is uploaded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "[Image #1] is not a file",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ToSnip gives a path such as C:\\ToSnip\\a1b2c3.jpg, or a link such as https://tosnip.com/v/a1b2c3. The CLI opens that address and receives the picture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Some windows should get a link, not a program",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open the web page and paste. Nothing is installed. The short link is copied. On a Mac the paste key is Command+V. Anyone who has the link can view the picture for 5 minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A screenshot should not stay",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The JPEG on this PC and the picture on the web last 5 minutes, then they are deleted. The old path and the old link no longer open."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An administrator window ignores a normal helper",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start the helper as administrator when that terminal is an administrator. Otherwise paste on the web page and give the CLI the link."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tosnip.com/" },
+          { "@type": "ListItem", "position": 2, "name": "The problem", "item": "https://tosnip.com/why/" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="preload" href="/fonts/google-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/google-sans-thai.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body data-title-key="titleWhy">
+  <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="/"><img class="brand-mark" src="/logo.jpg" alt="" width="28" height="28">ToSnip</a>
+    <div class="top-actions">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="navToggle">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Parts of the system" data-i18n-aria="navLabel">
+        <a href="/" data-i18n="navHome">Home</a>
+        <a href="/web/" data-i18n="navWeb">On the web</a>
+        <a href="/tool/" data-i18n="navTool">On this PC</a>
+        <a href="/why/" aria-current="page" data-i18n="navWhy">The problem</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language" data-i18n-aria="langLabel">
+        <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="th" lang="th" aria-pressed="false">ไทย</button>
+      </div>
+    </div>
+  </header>
+  <main id="content" class="wrap narrow">
+    <p class="eyebrow" data-i18n="whyEyebrow">Why ToSnip</p>
+    <h1 class="page-title" data-i18n="whyPageTitle">The screenshot is on the clipboard. The CLI still cannot see it.</h1>
+    <p class="lead" data-i18n="whyPageLead">ToSnip is for that gap. Print Screen, then Ctrl+V, and an AI in a terminal can open the screen you captured. You do not save the file, and you do not type its name.</p>
+    <ul class="why-jump">
+      <li><a href="#clipboard" data-i18n="whyJump1">The clipboard</a></li>
+      <li><a href="#label" data-i18n="whyJump2">Chat labels</a></li>
+      <li><a href="#link" data-i18n="whyJump3">No install</a></li>
+      <li><a href="#time" data-i18n="whyJump4">Five minutes</a></li>
+      <li><a href="#admin" data-i18n="whyJump5">Administrator</a></li>
+    </ul>
+
+    <article class="guide">
+      <section id="clipboard">
+        <span class="why-k" data-i18n="problem1k">The problem</span>
+        <h2 data-i18n="why1h">A terminal cannot open the clipboard</h2>
+        <p data-i18n="why1p">Press <span class="keys"><kbd>Print Screen</kbd></span> for the whole screen, or <span class="keys"><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></span> and drag over one area. The picture stays on the clipboard. PowerShell, CMD, Windows Terminal, and an AI CLI accept text at the cursor. <span class="keys"><kbd>Ctrl</kbd> + <kbd>V</kbd></span> in those windows does not place the picture. Saving the file yourself means you choose a folder, invent a name, and type that path.</p>
+        <h3 data-i18n="whyFixH">How ToSnip fixes it</h3>
+        <p data-i18n="why1f">Install once on this PC. After that, <span class="keys"><kbd>Ctrl</kbd> + <kbd>V</kbd></span> in Windows Terminal, PowerShell, PowerShell 7, or CMD writes a JPEG in <code>C:\ToSnip</code> and types the path at the cursor. The name is six characters, and you do not choose it. The width stays at most 1000 pixels. A smaller picture is not enlarged. The helper does not press Enter, so you still send the command yourself. Nothing from this path is uploaded.</p>
+        <p data-i18n="why1n">The same picture, while the file is still there and the 5 minutes are not up, types the same path again. If the window in front changes while the file is saved, the path is copied and the bar tells you to press Ctrl+V. A path that contains a space is quoted. If a folder cannot be created at the drive root, the file is stored in <code>LocalAppData\ToSnip\images</code>. Pasting ordinary text still pastes that text.</p>
+      </section>
+
+      <section id="label">
+        <span class="why-k" data-i18n="problem1k">The problem</span>
+        <h2 data-i18n="why2h">[Image #1] is not a file</h2>
+        <p data-i18n="why2p">A chat inserts [Image #1] when a picture is attached. The number is only the order of pictures in that message, and the next message starts again at 1. ToSnip does not create the label. The label does not record that the picture was a screenshot, and a CLI cannot open it.</p>
+        <h3 data-i18n="whyFixH">How ToSnip fixes it</h3>
+        <p data-i18n="why2f">ToSnip gives a path such as <code>C:\ToSnip\a1b2c3.jpg</code>, or a link such as <code>https://tosnip.com/v/a1b2c3</code>. The CLI opens that address and receives the picture.</p>
+      </section>
+
+      <section id="link">
+        <span class="why-k" data-i18n="problem1k">The problem</span>
+        <h2 data-i18n="why3h">Some windows should get a link, not a program</h2>
+        <p data-i18n="why3p">The AI may be in Cursor, VS Code, a Linux terminal, or Terminal on a Mac. Those windows do not receive a typed path from the Windows helper. Another person, or another machine, also needs a link rather than a folder on this disk.</p>
+        <h3 data-i18n="whyFixH">How ToSnip fixes it</h3>
+        <p data-i18n="why3f">Open the web page and paste. Nothing is installed. The short link is copied. On a Mac the paste key is <span class="keys"><kbd>Command</kbd> + <kbd>V</kbd></span>. Anyone who has the link can view the picture for 5 minutes. There is no account and no ads. The link is the key to the picture.</p>
+      </section>
+
+      <section id="time">
+        <span class="why-k" data-i18n="problem1k">The problem</span>
+        <h2 data-i18n="why4h">A screenshot should not stay</h2>
+        <p data-i18n="why4p">The screen you captured is often useful for a minute and then finished. A file left in a folder, or a link that still opens next week, keeps that screen around.</p>
+        <h3 data-i18n="whyFixH">How ToSnip fixes it</h3>
+        <p data-i18n="why4f">The JPEG on this PC and the picture on the web last 5 minutes, then they are deleted. The old path and the old link no longer open. Pasting that exact picture again, with no different picture in between, is refused. Paste A, then a different picture, then A again, and the second A is kept.</p>
+      </section>
+
+      <section id="admin">
+        <span class="why-k" data-i18n="problem1k">The problem</span>
+        <h2 data-i18n="why5h">An administrator window ignores a normal helper</h2>
+        <p data-i18n="why5p">A terminal opened with Run as administrator does not accept keystrokes from a program started the normal way. Ctrl+V can then fail to type the path.</p>
+        <h3 data-i18n="whyFixH">How ToSnip fixes it</h3>
+        <p data-i18n="why5f">Start the helper as administrator when that terminal is an administrator. Otherwise paste on the web page and give the CLI the link.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="whyNextH">Pick the path that matches the window</h2>
+        <p data-i18n="whyNextP">Use the web page when you want a link and nothing installed. Install on this PC when you want Ctrl+V to type a path in Windows Terminal, PowerShell, or CMD.</p>
+        <p class="next">
+          <a class="cta" href="/web/" data-i18n="whyWebCta">Use it on the web</a>
+          <a class="cta quiet" href="/tool/" data-i18n="whyToolCta">Install on this PC</a>
+        </p>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p data-i18n="whyFoot">The picture lasts 5 minutes on the web and on this PC, then it is deleted.</p>
+  </footer>
+  <script src="/i18n.js"></script>
+</body>
+</html>

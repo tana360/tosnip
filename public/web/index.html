@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <script>
+    try {
+      if (localStorage.getItem("spaceur-lang") === "th") {
+        document.documentElement.lang = "th";
+        document.documentElement.classList.add("i18n-wait");
+      }
+    } catch (e) {}
+  </script>
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="Use ToSnip online with nothing to install. Share a short link. The picture deletes itself after 5 minutes." data-i18n-content="metaWeb">
+  <link rel="canonical" href="https://tosnip.com/web/">
+  <link rel="alternate" hreflang="en" href="https://tosnip.com/web/">
+  <link rel="alternate" hreflang="x-default" href="https://tosnip.com/web/">
+  <meta property="og:site_name" content="ToSnip">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="On the web · ToSnip" data-i18n-content="titleWeb">
+  <meta property="og:description" content="Use ToSnip online with nothing to install. Share a short link. The picture deletes itself after 5 minutes." data-i18n-content="metaWeb">
+  <meta property="og:url" content="https://tosnip.com/web/">
+  <meta property="og:image" content="https://tosnip.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ToSnip. Print Screen, then Ctrl+V. The AI sees the picture.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="On the web · ToSnip" data-i18n-content="titleWeb">
+  <meta name="twitter:description" content="Use ToSnip online with nothing to install. Share a short link. The picture deletes itself after 5 minutes." data-i18n-content="metaWeb">
+  <meta name="twitter:image" content="https://tosnip.com/og.png">
+  <meta name="twitter:image:alt" content="ToSnip. Print Screen, then Ctrl+V. The AI sees the picture.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>On the web · ToSnip</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "ToSnip on the web",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "url": "https://tosnip.com/web/",
+        "inLanguage": "en",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Use ToSnip online with nothing to install. Share a short link. The picture deletes itself after 5 minutes."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tosnip.com/" },
+          { "@type": "ListItem", "position": 2, "name": "On the web", "item": "https://tosnip.com/web/" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="preload" href="/fonts/google-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/google-sans-thai.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body data-title-key="titleWeb">
+  <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="/"><img class="brand-mark" src="/logo.jpg" alt="" width="28" height="28">ToSnip</a>
+    <div class="top-actions">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="navToggle">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Parts of the system" data-i18n-aria="navLabel">
+        <a href="/" data-i18n="navHome">Home</a>
+        <a href="/web/" aria-current="page" data-i18n="navWeb">On the web</a>
+        <a href="/tool/" data-i18n="navTool">On this PC</a>
+        <a href="/why/" data-i18n="navWhy">The problem</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language" data-i18n-aria="langLabel">
+        <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="th" lang="th" aria-pressed="false">ไทย</button>
+      </div>
+    </div>
+  </header>
+  <main id="content" class="wrap narrow">
+    <p class="eyebrow" data-i18n="webEyebrow">In the browser</p>
+    <h1 class="page-title" data-i18n="webPageTitle">Nothing to install. Share the link. It deletes itself.</h1>
+    <p class="lead" data-i18n="webPageLead">Press <span class="keys"><kbd>Print Screen</kbd></span> or <span class="keys"><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></span>, come back to this page, and press <span class="keys"><kbd>Ctrl</kbd> + <kbd>V</kbd></span>. Nothing is installed. The link is copied so you can share it with a person or an AI CLI. The picture deletes itself after 5 minutes.</p>
+    <ul class="audiences">
+      <li data-i18n="webChipInstall">No install</li>
+      <li data-i18n="webChipShare">Share the link</li>
+      <li data-i18n="webChipDelete">Deletes itself</li>
+    </ul>
+
+    <section class="app" aria-label="Paste area" data-i18n-aria="dropLabel">
+      <section class="drop" id="drop">
+        <strong data-i18n="dropStrong">Press Ctrl+V to paste a picture</strong>
+        <p class="hint" data-i18n="dropHint">Or drag a picture onto this page</p>
+      </section>
+      <div id="progress" class="progress" hidden>
+        <div class="progress-row">
+          <span id="progress-label" data-i18n="uploading" data-i18n-html="text">Uploading</span>
+          <span id="progress-percent"></span>
+        </div>
+        <div id="progress-bar" class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+      <p id="status" role="status"></p>
+      <section class="result" id="result" hidden>
+        <img class="preview" id="preview" alt="The picture you pasted" data-i18n-alt="previewAlt" referrerpolicy="no-referrer">
+        <input id="link" type="text" readonly spellcheck="false" autocomplete="off" aria-label="Picture link" data-i18n-aria="linkAria">
+        <p class="meta" id="meta"></p>
+        <p class="curl" id="curl" translate="no"></p>
+        <p class="meta" id="remain"></p>
+      </section>
+      <p class="note" data-i18n="webNote">Nothing to install. Share this link with anyone who should see the picture. It deletes itself after 5 minutes. In PowerShell, use curl.exe.</p>
+    </section>
+
+    <article class="guide" id="guide">
+      <section>
+        <h2 data-i18n="useH">How to use it</h2>
+        <ol>
+          <li data-i18n="use1">Leave this page open. There is no sign-up and nothing to install.</li>
+          <li data-i18n="use2">Press <span class="keys"><kbd>Print Screen</kbd></span> for the whole screen, or press <span class="keys"><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></span> and drag over one area. The picture goes to the clipboard. You do not save a file.</li>
+          <li data-i18n="use3">Click back on this page, then press <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
+          <li data-i18n="use4">Wait until scaling and uploading finish and the bar says Uploaded. The link is already on the clipboard.</li>
+          <li data-i18n="use5">Share the link with a person, or paste it into an AI CLI in PowerShell, CMD, or any other CLI. You do not tell it the file name.</li>
+        </ol>
+        <p data-i18n="useFile">If you already have a picture file, you can drag it onto this page. Pasting is the main path.</p>
+      </section>
+      <section>
+        <h2 data-i18n="afterH">What you see after a successful paste</h2>
+        <ul>
+          <li data-i18n="after1">A preview, so you can check that the right picture was pasted</li>
+          <li data-i18n="after2">A link field. Click it and the whole field is selected, ready for Ctrl+C if the automatic copy did not run</li>
+          <li data-i18n="after3">The size after scaling, such as 1000×600</li>
+          <li data-i18n="after4">The command <code>curl.exe -L "link" -o shot.png</code> for saving the image file</li>
+          <li data-i18n="after5">A countdown until the 5 minutes are up</li>
+        </ul>
+        <p data-i18n="afterReady">A green status that says "Ready. The link was copied." means the link is on the clipboard and can be pasted somewhere else.</p>
+      </section>
+      <section>
+        <h2 data-i18n="cliH">Open the picture from a CLI</h2>
+        <p data-i18n="cli1">The link looks like <code>https://tosnip.com/v/</code> followed by 6 letters or digits. Opening it returns the image file itself, not another web page around it.</p>
+        <p data-i18n="cli2">In PowerShell, <code>curl</code> is a different command. Use <code>curl.exe</code>.</p>
+        <p><code>curl.exe -L "https://tosnip.com/v/xyz123" -o shot.png</code></p>
+        <p data-i18n="cli3">Replace xyz123 with the real link from this page. Anyone with the link can open the picture until it expires. There is no login.</p>
+      </section>
+      <section>
+        <h2 data-i18n="barH">The progress bar</h2>
+        <p data-i18n="barP">While the picture is scaled, the bar moves back and forth and says "Scaling". While it is sent, the bar follows the real percentage of data leaving this machine and says "Uploading". When it finishes, the bar stays at 100% and says "Uploaded".</p>
+        <p data-i18n="barFail">If the paste fails, the bar is hidden and a red message explains why.</p>
+      </section>
+      <section>
+        <h2 data-i18n="dupH">The same picture again</h2>
+        <p data-i18n="dup1">If you paste the same source file as the last picture that uploaded successfully, it is not sent again, and the page says "This is the same image as the one just pasted. It cannot be pasted again." The bar from the finished job is hidden.</p>
+        <p data-i18n="dup2">Paste a different picture in between, then paste the first one again, and it is accepted. A picture that failed to send is not remembered as the last one.</p>
+      </section>
+      <section>
+        <h2 data-i18n="ttlH">It deletes itself</h2>
+        <p data-i18n="ttlP">Five minutes after a successful upload, the picture deletes itself. Opening the link after that does not find it. Nothing stays behind as a permanent store.</p>
+      </section>
+      <section>
+        <h2 data-i18n="typeH">Picture types and size</h2>
+        <ul>
+          <li data-i18n="type1">PNG, JPEG, GIF, and WebP are accepted</li>
+          <li data-i18n="type2">SVG and files that are not pictures are refused</li>
+          <li data-i18n="type3">Width is reduced to at most 1000 pixels, keeping the proportions. A narrower picture stays at its own size.</li>
+          <li data-i18n="type4">If it is still too large after scaling, quality or size is reduced further. If it is still too large, the page says so.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 data-i18n="failH">When a paste fails</h2>
+        <ul>
+          <li data-i18n="fail1">"Only PNG, JPEG, GIF, or WebP pictures can be pasted." when the clipboard or the file is not a supported picture</li>
+          <li data-i18n="fail2">"The picture is still too large after scaling." when it is still over the limit after compression</li>
+          <li data-i18n="fail3">"The server could not be reached." when the network fails. You can paste again.</li>
+          <li data-i18n="fail4">"The server ran into a problem." when the service does not answer successfully</li>
+        </ul>
+      </section>
+      <section>
+        <h2 data-i18n="otherH">The other path</h2>
+        <p data-i18n="otherP">To press Ctrl+V in CMD and get a file path on this PC, without sending the picture to the web, use the tool on this PC.</p>
+        <p class="next"><a class="cta quiet" href="/tool/" data-i18n="otherCta">See the tool on this PC</a></p>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p data-i18n="webFoot">Share the link while you need it. The picture deletes itself after 5 minutes.</p>
+  </footer>
+  <script src="/i18n.js"></script>
+  <script>
+    const MAX_WIDTH = 1000;
+    const MAX_BYTES = 1500000;
+    const ERROR_KEYS = {
+      not_image: "errNotImage",
+      too_large: "errTooLarge",
+      bad_request: "errBadRequest",
+      server_error: "errServer",
+      network: "errNetwork",
+      duplicate: "errDuplicate",
+    };
+
+    const statusEl = document.getElementById("status");
+    const resultEl = document.getElementById("result");
+    const previewEl = document.getElementById("preview");
+    const linkEl = document.getElementById("link");
+    const metaEl = document.getElementById("meta");
+    const curlEl = document.getElementById("curl");
+    const remainEl = document.getElementById("remain");
+    const progressEl = document.getElementById("progress");
+    const progressLabelEl = document.getElementById("progress-label");
+    const progressPercentEl = document.getElementById("progress-percent");
+    const progressBarEl = document.getElementById("progress-bar");
+    const progressFillEl = document.getElementById("progress-fill");
+    let chain = Promise.resolve();
+    let timer = 0;
+    let lastDigest = "";
+    let pendingDigest = "";
+
+    function paint(el, key, vars) {
+      el.dataset.i18n = key;
+      el.dataset.i18nHtml = "text";
+      if (vars) el.dataset.i18nVars = JSON.stringify(vars);
+      else delete el.dataset.i18nVars;
+      el.textContent = window.ToSnipI18n.t(key, vars);
+    }
+
+    function setProgress(mode, value, key) {
+      if (mode === "hide") {
+        progressEl.hidden = true;
+        document.body.classList.remove("busy");
+        progressFillEl.classList.remove("indeterminate");
+        progressFillEl.style.width = "0";
+        progressBarEl.setAttribute("aria-valuenow", "0");
+        return;
+      }
+      progressEl.hidden = false;
+      document.body.classList.add("busy");
+      const label = window.ToSnipI18n.t(key);
+      progressLabelEl.dataset.i18n = key;
+      progressLabelEl.dataset.i18nHtml = "text";
+      delete progressLabelEl.dataset.i18nVars;
+      progressLabelEl.textContent = label;
+      if (mode === "indeterminate") {
+        progressFillEl.classList.add("indeterminate");
+        progressBarEl.removeAttribute("aria-valuenow");
+        progressBarEl.setAttribute("aria-valuetext", label);
+        progressPercentEl.textContent = "";
+        return;
+      }
+      const percent = Math.max(0, Math.min(100, Math.round(value)));
+      progressFillEl.classList.remove("indeterminate");
+      progressFillEl.style.width = `${percent}%`;
+      progressBarEl.setAttribute("aria-valuenow", String(percent));
+      progressBarEl.setAttribute("aria-valuetext", `${label} ${percent}%`);
+      progressPercentEl.textContent = `${percent}%`;
+    }
+
+    function postImage(data, onProgress) {
+      return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "/api/images");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.upload.onprogress = (event) => {
+          if (event.lengthComputable && event.total > 0) onProgress(event.loaded / event.total);
+          else onProgress(null);
+        };
+        xhr.onload = () => {
+          let payload = {};
+          try {
+            payload = JSON.parse(xhr.responseText || "{}");
+          } catch {
+            payload = {};
+          }
+          resolve({ ok: xhr.status >= 200 && xhr.status < 300, payload });
+        };
+        xhr.onerror = () => reject(new Error("network"));
+        xhr.send(JSON.stringify({ data }));
+      });
+    }
+
+    function setStatus(key, kind) {
+      if (key) paint(statusEl, key);
+      else {
+        delete statusEl.dataset.i18n;
+        delete statusEl.dataset.i18nVars;
+        statusEl.textContent = "";
+      }
+      statusEl.classList.toggle("error", kind === "error");
+      statusEl.classList.toggle("ready", kind === "ready");
+    }
+
+    function formatRemaining(iso) {
+      const ms = Date.parse(iso) - Date.now();
+      if (!Number.isFinite(ms) || ms <= 0) return null;
+      const total = Math.ceil(ms / 1000);
+      const minutes = Math.floor(total / 60);
+      const seconds = total % 60;
+      return `${minutes}:${String(seconds).padStart(2, "0")}`;
+    }
+
+    function tick() {
+      const label = formatRemaining(remainEl.dataset.expires || "");
+      if (label) paint(remainEl, "remaining", { time: label });
+      else paint(remainEl, "expired");
+    }
+
+    function fileFromList(files) {
+      for (const file of files || []) {
+        if (file.type.startsWith("image/") || /\.(png|jpe?g|gif|webp)$/i.test(file.name || "")) return file;
+      }
+      return null;
+    }
+
+    function fileFromClipboard(data) {
+      if (!data) return null;
+      if (data.items) {
+        for (const item of data.items) {
+          if (item.kind === "file" && item.type.startsWith("image/")) {
+            const file = item.getAsFile();
+            if (file) return file;
+          }
+        }
+      }
+      return fileFromList(data.files);
+    }
+
+    function renderBlob(bitmap, width, height, type, quality) {
+      const canvas = document.createElement("canvas");
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext("2d");
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = "high";
+      if (type === "image/jpeg") {
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, width, height);
+      }
+      ctx.drawImage(bitmap, 0, 0, width, height);
+      return new Promise((resolve) => canvas.toBlob((blob) => resolve(blob), type, quality));
+    }
+
+    async function encode(bitmap, width, height, quality) {
+      return await renderBlob(bitmap, width, height, "image/webp", quality)
+        || await renderBlob(bitmap, width, height, "image/jpeg", quality);
+    }
+
+    async function compress(file) {
+      const bitmap = await createImageBitmap(file);
+      try {
+        const scale = Math.min(1, MAX_WIDTH / bitmap.width);
+        let width = Math.max(1, Math.round(bitmap.width * scale));
+        let height = Math.max(1, Math.round(bitmap.height * scale));
+        let quality = 0.86;
+        let blob = await encode(bitmap, width, height, quality);
+        if (!blob) throw new Error("not_image");
+        while (blob.size > MAX_BYTES && quality > 0.5) {
+          quality -= 0.12;
+          blob = await encode(bitmap, width, height, quality);
+        }
+        while (blob.size > MAX_BYTES && width > 320) {
+          width = Math.max(320, Math.round(width * 0.8));
+          height = Math.max(1, Math.round(height * 0.8));
+          blob = await encode(bitmap, width, height, quality);
+        }
+        if (!blob || blob.size > MAX_BYTES) throw new Error("too_large");
+        const bytes = new Uint8Array(await blob.arrayBuffer());
+        let binary = "";
+        for (let index = 0; index < bytes.length; index += 8192) {
+          binary += String.fromCharCode(...bytes.subarray(index, index + 8192));
+        }
+        return { data: btoa(binary), width, height };
+      } finally {
+        bitmap.close?.();
+      }
+    }
+
+    async function copyLink(url) {
+      try {
+        await navigator.clipboard.writeText(url);
+        return true;
+      } catch {
+        linkEl.focus();
+        linkEl.select();
+        return false;
+      }
+    }
+
+    function show(payload, size) {
+      resultEl.hidden = false;
+      previewEl.src = payload.url;
+      linkEl.value = payload.url;
+      paint(metaEl, "shrunk", { w: size.width, h: size.height });
+      curlEl.textContent = `curl.exe -L "${payload.url}" -o shot.png`;
+      remainEl.dataset.expires = payload.expiresAt;
+      tick();
+      clearInterval(timer);
+      timer = setInterval(tick, 1000);
+    }
+
+    async function digestOf(file) {
+      const hash = await crypto.subtle.digest("SHA-256", await file.arrayBuffer());
+      return [...new Uint8Array(hash)].map((value) => value.toString(16).padStart(2, "0")).join("");
+    }
+
+    async function upload(file) {
+      let digest = "";
+      try {
+        digest = await digestOf(file);
+      } catch {
+        digest = "";
+      }
+      if (digest && (digest === lastDigest || digest === pendingDigest)) {
+        setStatus(ERROR_KEYS.duplicate, "error");
+        if (digest !== pendingDigest) setProgress("hide");
+        return;
+      }
+      pendingDigest = digest;
+      try {
+        await send(file, digest);
+      } finally {
+        if (pendingDigest === digest) pendingDigest = "";
+      }
+    }
+
+    async function send(file, digest) {
+      let finished = false;
+      try {
+        setProgress("indeterminate", 0, "shrinking");
+        setStatus("shrinkingStatus");
+        let compressed;
+        try {
+          compressed = await compress(file);
+        } catch (error) {
+          setStatus(ERROR_KEYS[error.message] || ERROR_KEYS.not_image, "error");
+          return;
+        }
+        setProgress("determinate", 0, "uploading");
+        setStatus("uploadingStatus");
+        let result;
+        try {
+          result = await postImage(compressed.data, (ratio) => {
+            if (ratio == null) setProgress("indeterminate", 0, "uploading");
+            else setProgress("determinate", ratio * 100, "uploading");
+          });
+        } catch {
+          setStatus(ERROR_KEYS.network, "error");
+          return;
+        }
+        if (!result.ok || !result.payload.url) {
+          setStatus(ERROR_KEYS[result.payload.error] || ERROR_KEYS.server_error, "error");
+          return;
+        }
+        setProgress("determinate", 100, "uploaded");
+        show(result.payload, compressed);
+        lastDigest = digest;
+        const copied = await copyLink(result.payload.url);
+        setStatus(copied ? "readyCopied" : "readyManual", copied ? "ready" : "error");
+        finished = true;
+      } finally {
+        if (!finished) setProgress("hide");
+      }
+    }
+
+    function enqueue(file) {
+      if (!(file instanceof Blob) || file.size === 0) {
+        setStatus(ERROR_KEYS.not_image, "error");
+        return;
+      }
+      chain = chain.then(() => upload(file)).catch(() => {
+        setProgress("hide");
+        setStatus(ERROR_KEYS.server_error, "error");
+      });
+    }
+
+    document.addEventListener("paste", (event) => {
+      const file = fileFromClipboard(event.clipboardData);
+      if (!file) return;
+      event.preventDefault();
+      enqueue(file);
+    });
+
+    window.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      document.body.classList.add("dragging");
+    });
+
+    window.addEventListener("dragleave", (event) => {
+      if (!event.relatedTarget) document.body.classList.remove("dragging");
+    });
+
+    window.addEventListener("drop", (event) => {
+      event.preventDefault();
+      document.body.classList.remove("dragging");
+      const files = [...(event.dataTransfer?.files || [])];
+      const image = fileFromList(files);
+      if (files.length > 0 && !image) {
+        setStatus(ERROR_KEYS.not_image, "error");
+        return;
+      }
+      if (image) enqueue(image);
+    });
+
+    linkEl.addEventListener("focus", () => linkEl.select());
+
+    window.addEventListener("spaceur-lang", () => {
+      if (!progressEl.hidden && progressLabelEl.dataset.i18n) {
+        const label = window.ToSnipI18n.t(progressLabelEl.dataset.i18n);
+        progressLabelEl.textContent = label;
+        if (progressFillEl.classList.contains("indeterminate")) {
+          progressBarEl.setAttribute("aria-valuetext", label);
+        } else {
+          const percent = progressBarEl.getAttribute("aria-valuenow") || "0";
+          progressBarEl.setAttribute("aria-valuetext", `${label} ${percent}%`);
+        }
+      }
+      if (remainEl.dataset.expires) tick();
+    });
+  </script>
+</body>
+</html>

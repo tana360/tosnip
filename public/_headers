@@ -1,0 +1,137 @@
+/
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/site.css
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+
+/i18n.js
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+
+/web
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/web/
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/web/index.html
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/tool
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/tool/
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/tool/index.html
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/why
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/why/
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/why/index.html
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+  X-Content-Type-Options: nosniff
+
+/og.png
+  Cache-Control: public, max-age=604800
+  Content-Type: image/png
+  X-Content-Type-Options: nosniff
+
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800
+  Content-Type: image/png
+  X-Content-Type-Options: nosniff
+
+/logo.jpg
+  Cache-Control: public, max-age=604800
+  Content-Type: image/jpeg
+  X-Content-Type-Options: nosniff
+
+/favicon.svg
+  Cache-Control: public, max-age=604800
+  Content-Type: image/svg+xml
+  X-Content-Type-Options: nosniff
+
+/vid/tosnip-video.mp4
+  Cache-Control: public, max-age=604800
+  Content-Type: video/mp4
+  X-Content-Type-Options: nosniff
+
+/vid/poster.jpg
+  Cache-Control: public, max-age=604800
+  Content-Type: image/jpeg
+  X-Content-Type-Options: nosniff
+
+/site.webmanifest
+  Cache-Control: public, max-age=3600
+  Content-Type: application/manifest+json; charset=utf-8
+  X-Content-Type-Options: nosniff
+
+/install.ps1
+  Cache-Control: no-cache
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+
+/uninstall.ps1
+  Cache-Control: no-cache
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+
+/tosnip-paste.ps1
+  Cache-Control: no-cache
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+
+/fonts/google-sans-latin.woff2
+  Cache-Control: public, max-age=604800
+  Content-Type: font/woff2
+  X-Content-Type-Options: nosniff
+
+/fonts/google-sans-latin-ext.woff2
+  Cache-Control: public, max-age=604800
+  Content-Type: font/woff2
+  X-Content-Type-Options: nosniff
+
+/fonts/google-sans-thai.woff2
+  Cache-Control: public, max-age=604800
+  Content-Type: font/woff2
+  X-Content-Type-Options: nosniff
+
+/fonts/OFL.txt
+  Cache-Control: public, max-age=604800
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff

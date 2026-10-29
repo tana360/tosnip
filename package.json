@@ -1,0 +1,17 @@
+{
+  "name": "tosnip",
+  "description": "Print Screen, then Ctrl+V. A short-lived picture a CLI or an AI can open.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "wrangler": "4.153.0"
+  }
+}

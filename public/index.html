@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <script>
+    try {
+      if (localStorage.getItem("spaceur-lang") === "th") {
+        document.documentElement.lang = "th";
+        document.documentElement.classList.add("i18n-wait");
+      }
+    } catch (e) {}
+  </script>
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="Print Screen, then Ctrl+V. ToSnip places the picture where an AI in PowerShell, CMD, or a CLI can open it. You do not save the file, and you do not type its name." data-i18n-content="metaHome">
+  <link rel="canonical" href="https://tosnip.com/">
+  <link rel="alternate" hreflang="en" href="https://tosnip.com/">
+  <link rel="alternate" hreflang="x-default" href="https://tosnip.com/">
+  <meta property="og:site_name" content="ToSnip">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="ToSnip · Print Screen, then Ctrl+V" data-i18n-content="titleHome">
+  <meta property="og:description" content="Print Screen, then Ctrl+V. ToSnip places the picture where an AI in PowerShell, CMD, or a CLI can open it. You do not save the file, and you do not type its name." data-i18n-content="metaHome">
+  <meta property="og:url" content="https://tosnip.com/">
+  <meta property="og:image" content="https://tosnip.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ToSnip. Print Screen, then Ctrl+V. The AI sees the picture.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ToSnip · Print Screen, then Ctrl+V" data-i18n-content="titleHome">
+  <meta name="twitter:description" content="Print Screen, then Ctrl+V. ToSnip places the picture where an AI in PowerShell, CMD, or a CLI can open it. You do not save the file, and you do not type its name." data-i18n-content="metaHome">
+  <meta name="twitter:image" content="https://tosnip.com/og.png">
+  <meta name="twitter:image:alt" content="ToSnip. Print Screen, then Ctrl+V. The AI sees the picture.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>ToSnip · Print Screen, then Ctrl+V</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "ToSnip",
+        "url": "https://tosnip.com/",
+        "inLanguage": "en",
+        "description": "Print Screen, then Ctrl+V. ToSnip places the picture where an AI in PowerShell, CMD, or a CLI can open it."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ToSnip",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows, Web",
+        "url": "https://tosnip.com/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "VideoObject",
+        "name": "ToSnip demo",
+        "description": "Three moves. Snip the screen, open a terminal, then Ctrl+V. The picture is ready for the AI.",
+        "thumbnailUrl": "https://tosnip.com/vid/poster.jpg",
+        "uploadDate": "2026-10-27",
+        "duration": "PT10S",
+        "contentUrl": "https://tosnip.com/vid/tosnip-video.mp4",
+        "embedUrl": "https://tosnip.com/"
+      }
+    ]
+  }
+  </script>
+  <link rel="preload" href="/fonts/google-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/google-sans-thai.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body data-title-key="titleHome">
+  <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="/"><img class="brand-mark" src="/logo.jpg" alt="" width="28" height="28">ToSnip</a>
+    <div class="top-actions">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="navToggle">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Parts of the system" data-i18n-aria="navLabel">
+        <a href="/" aria-current="page" data-i18n="navHome">Home</a>
+        <a href="/web/" data-i18n="navWeb">On the web</a>
+        <a href="/tool/" data-i18n="navTool">On this PC</a>
+        <a href="/why/" data-i18n="navWhy">The problem</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language" data-i18n-aria="langLabel">
+        <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="th" lang="th" aria-pressed="false">ไทย</button>
+      </div>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="homeEyebrow">For developers and everyone else</p>
+        <div class="hero-text">
+          <h1 data-i18n="homeH1">Print Screen. Ctrl+V. The AI sees the picture.</h1>
+          <p class="lead" data-i18n="homeLead">You do not save the picture, and you do not type which file it is. Press <span class="keys"><kbd>Print Screen</kbd></span> or <span class="keys"><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></span>, then <span class="keys"><kbd>Ctrl</kbd> + <kbd>V</kbd></span>. In PowerShell, CMD, or Windows Terminal the path is typed for you. Online, nothing is installed, the link can be shared, and the picture deletes itself.</p>
+        </div>
+        <ul class="audiences">
+          <li data-i18n="audDev">Developers</li>
+          <li data-i18n="audEveryone">Everyone</li>
+          <li data-i18n="audPs">PowerShell</li>
+          <li data-i18n="audCmd">CMD</li>
+          <li data-i18n="audCli">CLI</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="cta" href="/web/" data-i18n="webCta">Use it online</a>
+          <a class="cta quiet" href="/tool/" data-i18n="toolCta">See how to install</a>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="term-live is-snip">
+          <div class="snip-present" aria-hidden="true">
+            <div class="snip-desk">
+              <div class="snip-top"><span></span><span></span><span></span></div>
+              <div class="snip-line w1"></div>
+              <div class="snip-line w2"></div>
+              <div class="snip-card"></div>
+              <div class="snip-line w3"></div>
+              <div class="snip-rect"></div>
+              <svg class="snip-mouse" viewBox="0 0 16 22">
+                <path d="M1.2 1.2 L1.2 17.2 L5.1 13.6 L8.4 20.4 L10.6 19.4 L7.3 12.6 L12.8 12.4 Z" fill="#fff" stroke="#1c1916" stroke-width="1.15" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="term-present">
+            <div class="term-bar">
+              <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span class="term-title" data-i18n="demoTitleTerm" data-i18n-html="text">Windows Terminal</span>
+              <span class="term-mode" data-i18n="demoModePs" data-i18n-html="text">PowerShell</span>
+            </div>
+            <p class="term-status">
+              <span class="term-status-label" data-i18n="demoPaste" data-i18n-html="text">Ctrl+V</span>
+              <span class="term-meter" aria-hidden="true"><span class="indeterminate"></span></span>
+            </p>
+            <p class="term-line"><span class="prompt">PS C:\work&gt;</span> <span class="typed"></span><span class="caret"></span></p>
+          </div>
+        </div>
+        <p class="stage-caption" data-i18n="demoCaptionCapture">Drag across the screen. The picture lands on the clipboard.</p>
+      </div>
+    </section>
+
+    <section class="demo" aria-label="Demo" data-i18n-aria="demoLabel">
+      <h2 class="section-title" data-i18n="demoTitle">Watch the demo</h2>
+      <p class="sub" data-i18n="demoSub">Three moves. Snip the screen, open a terminal, then Ctrl+V. The picture is ready for the AI.</p>
+      <div class="demo-grid">
+        <figure class="demo-player">
+          <video controls playsinline preload="metadata" width="1280" height="720" poster="/vid/poster.jpg" aria-label="Demo: snip, then Ctrl+V in the terminal" data-i18n-aria="demoVideo">
+            <source src="/vid/tosnip-video.mp4" type="video/mp4">
+          </video>
+        </figure>
+        <ol class="demo-steps">
+          <li>
+            <span>01</span>
+            <h3 data-i18n="demo1h">Take a snippet</h3>
+            <p data-i18n="demo1p">Drag over the part the AI should see. The picture stays on the clipboard.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3 data-i18n="demo2h">Open the terminal</h3>
+            <p data-i18n="demo2p">Bring Windows Terminal, PowerShell, or CMD to the front.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3 data-i18n="demo3h">Press Ctrl+V</h3>
+            <p data-i18n="demo3p">The path is typed at the cursor. The AI opens that file and sees the screen you snipped.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="quick" aria-label="Quick start" data-i18n-aria="quickLabel">
+      <h2 class="section-title" data-i18n="quickTitle">Quick start</h2>
+      <div class="quick-grid">
+        <article>
+          <span data-i18n="quickWebK">On the web</span>
+          <h3 data-i18n="quickWebH">Use it in the browser</h3>
+          <p data-i18n="quickWebP">Nothing to install. Open the page and paste the picture there.</p>
+          <a class="cta" href="/web/" data-i18n="quickWebCta">Open the web page</a>
+        </article>
+        <article>
+          <span data-i18n="quickCliK">On the CLI</span>
+          <h3 data-i18n="quickCliH">Install on this PC</h3>
+          <p data-i18n="quickCliP">Copy this command, paste it into PowerShell, and press Enter.</p>
+          <div class="command">
+            <p id="install-command" class="quick-cmd" tabindex="0" aria-label="Install command" data-i18n-aria="installAria" data-copied-key="installCopied">irm https://<wbr>tosnip.com/<wbr>install.ps1 | iex</p>
+            <button type="button" class="copy" data-for="install-command" data-i18n="copy" data-i18n-html="text">Copy</button>
+          </div>
+          <p class="quick-alt"><a href="/tool/#inspect" data-i18n="quickInspect">Or read the script in Notepad before it runs</a></p>
+          <p id="quick-status" class="quick-status" role="status"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="problem" aria-label="Why ToSnip" data-i18n-aria="problemLabel">
+      <h2 class="section-title" data-i18n="problemTitle">Why the screenshot never reaches the CLI</h2>
+      <p class="sub" data-i18n="problemSub">You captured the screen so an AI could look at it. A terminal still needs a file it can open.</p>
+      <div class="problem-grid">
+        <article>
+          <span data-i18n="problem1k">The problem</span>
+          <h3 data-i18n="problem1h">A clipboard picture has nowhere to go</h3>
+          <p data-i18n="problem1p">Print Screen and Win + Shift + S leave the picture on the clipboard. PowerShell, CMD, and an AI CLI cannot open that. Saving the file means you choose a name and type the path. A chat label such as [Image #1] is only the index of a picture in that message.</p>
+        </article>
+        <article class="fix">
+          <span data-i18n="problem2k">What ToSnip fixes</span>
+          <h3 data-i18n="problem2h">Ctrl+V gives the AI something it can open</h3>
+          <p data-i18n="problem2p">In Windows Terminal, PowerShell, or CMD, Ctrl+V types a path in C:\ToSnip. On the web, the same paste copies a short link any CLI can open. The picture lasts 5 minutes, then it is deleted.</p>
+        </article>
+      </div>
+      <p class="next"><a class="cta quiet" href="/why/" data-i18n="problemMore">Read the full explanation</a></p>
+    </section>
+
+    <section class="see" aria-label="How a CLI or terminal sees the screen" data-i18n-aria="seeLabel">
+      <h2 class="section-title" data-i18n="seeTitle">Made so a CLI can see the screen</h2>
+      <p class="sub" data-i18n="seeSub">ToSnip works in a CLI and in a terminal. Copy the screen, paste once, and the AI looks at the picture you meant to show.</p>
+      <div class="see-grid">
+        <article>
+          <div class="see-frame" aria-hidden="true">
+            <div class="see-desk">
+              <div class="see-top"><span></span><span></span><span></span></div>
+              <div class="see-line w1"></div>
+              <div class="see-line w2"></div>
+              <div class="see-card">
+                <i></i><i></i>
+              </div>
+              <div class="see-line w3"></div>
+              <div class="see-rect"></div>
+              <svg class="see-mouse" viewBox="0 0 16 22">
+                <path d="M1.2 1.2 L1.2 17.2 L5.1 13.6 L8.4 20.4 L10.6 19.4 L7.3 12.6 L12.8 12.4 Z" fill="#fff" stroke="#1c1916" stroke-width="1.15" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <span>01</span>
+          <h3 data-i18n="see1h">Copy the screen</h3>
+          <p data-i18n="see1p">Drag across the part you want shown. That picture sits on the clipboard. You do not save a file.</p>
+        </article>
+        <article>
+          <div class="see-frame see-term" aria-hidden="true">
+            <div class="see-bar">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <span>Windows Terminal</span>
+            </div>
+            <p class="see-key">Ctrl+V</p>
+            <p class="see-cmd"><span class="see-prompt">PS C:\work&gt;</span> <span class="see-typed">C:\ToSnip\a1b2c3.jpg</span></p>
+          </div>
+          <span>02</span>
+          <h3 data-i18n="see2h">Paste in the terminal</h3>
+          <p data-i18n="see2p">In Windows Terminal, PowerShell, or CMD, Ctrl+V types the path. On the web, the same paste copies a link any CLI can open.</p>
+        </article>
+        <article>
+          <div class="see-frame see-ai" aria-hidden="true">
+            <div class="see-bar">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <span>AI CLI</span>
+            </div>
+            <p class="see-cmd"><span class="see-prompt">&gt;</span> <span class="see-typed">C:\ToSnip\a1b2c3.jpg</span></p>
+            <div class="see-shot">
+              <i></i><i></i>
+            </div>
+          </div>
+          <span>03</span>
+          <h3 data-i18n="see3h">The AI sees that picture</h3>
+          <p data-i18n="see3p">The CLI opens the path or the link and looks at the same screen you copied.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="support" aria-label="Where ToSnip works" data-i18n-aria="supportLabel">
+      <h2 class="section-title" data-i18n="supportTitle">Where it works</h2>
+      <p class="sub" data-i18n="supportSub">The page in the browser works on Windows, Linux, and Mac. The tool that types a path into the terminal is for Windows.</p>
+      <div class="support-grid">
+        <article>
+          <span>Windows</span>
+          <h3 data-i18n="supportWinH">Browser and the terminal tool</h3>
+          <p data-i18n="supportWinP">Paste on the web page. Or install the tool once, then press Ctrl+V in Windows Terminal, PowerShell, or CMD. The tool types a path in C:\ToSnip.</p>
+        </article>
+        <article>
+          <span>Linux</span>
+          <h3 data-i18n="supportLinuxH">Browser</h3>
+          <p data-i18n="supportLinuxP">Paste the picture on the web page and share the link. A CLI on Linux opens that link. The tool that types into the terminal is for Windows.</p>
+        </article>
+        <article>
+          <span>Mac</span>
+          <h3 data-i18n="supportMacH">Browser</h3>
+          <p data-i18n="supportMacP">Paste the picture on the web page. On a Mac the paste key is Command+V. Share the link, and a CLI on the Mac opens it. The tool that types into the terminal is for Windows.</p>
+        </article>
+      </div>
+      <div class="support-terms">
+        <article>
+          <h3 data-i18n="supportTermH">Terminals that receive the typed path</h3>
+          <ul>
+            <li data-i18n="supportTerm1">Windows Terminal</li>
+            <li data-i18n="supportTerm2">PowerShell, including PowerShell 7</li>
+            <li data-i18n="supportTerm3">CMD</li>
+          </ul>
+        </article>
+        <article>
+          <h3 data-i18n="supportElseH">Other terminals</h3>
+          <p data-i18n="supportElseP">In Cursor, VS Code, a Linux terminal, or Terminal on a Mac, use the web page and give the CLI the link.</p>
+        </article>
+      </div>
+    </section>
+
+    <h2 class="section-title" data-i18n="featTitle">Shared by both paths</h2>
+    <div class="features">
+      <article>
+        <span data-i18n="featSize">Size</span>
+        <h3 data-i18n="featSizeH">Scaled automatically</h3>
+        <p data-i18n="featSizeP">Width stays at most 1000 pixels. A smaller picture is not enlarged.</p>
+      </article>
+      <article>
+        <span data-i18n="featFile">File</span>
+        <h3 data-i18n="featFileH">Common picture types</h3>
+        <p data-i18n="featFileP">PNG, JPEG, GIF, and WebP. Other files are refused.</p>
+      </article>
+      <article>
+        <span data-i18n="featStatus">Status</span>
+        <h3 data-i18n="featStatusH">You can see it working</h3>
+        <p data-i18n="featStatusP">A bar shows while the picture is scaled, and while it is uploaded or written to disk.</p>
+      </article>
+      <article>
+        <span data-i18n="featDup">Duplicate</span>
+        <h3 data-i18n="featDupH">No instant duplicate</h3>
+        <p data-i18n="featDupP">The same picture as the last success is not sent or saved again until a different picture comes in between.</p>
+      </article>
+      <article>
+        <span data-i18n="featTime">Time</span>
+        <h3 data-i18n="featTimeH">It lasts 5 minutes</h3>
+        <p data-i18n="featTimeP">The link and the file are deleted when the time is up. Built for a temporary screenshot.</p>
+      </article>
+      <article>
+        <span data-i18n="featAccount">Account</span>
+        <h3 data-i18n="featAccountH">No sign-up</h3>
+        <p data-i18n="featAccountP">No login and no ads. On the web, the link is the key to the picture.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer has-stat">
+    <p data-i18n="homeFoot">For a developer in PowerShell, CMD, or a CLI, and for anyone who needs an AI to see the screen. The picture lasts 5 minutes.</p>
+    <p class="view-stat" id="view-stat" hidden>
+      <strong id="view-count">0</strong>
+      <span data-i18n="viewLabel" data-i18n-html="text">views</span>
+    </p>
+  </footer>
+  <script src="/i18n.js"></script>
+  <script>
+    (function () {
+      const stat = document.getElementById("view-stat");
+      const countEl = document.getElementById("view-count");
+      if (!stat || !countEl) return;
+      function paint(n) {
+        const thai = window.ToSnipI18n && window.ToSnipI18n.lang === "th";
+        countEl.textContent = new Intl.NumberFormat(thai ? "th-TH" : "en").format(n);
+        stat.hidden = false;
+      }
+      window.addEventListener("spaceur-lang", function () {
+        const n = Number(stat.getAttribute("data-views"));
+        if (Number.isFinite(n)) paint(n);
+      });
+      fetch("/api/views", { method: "POST" })
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (body) {
+          if (!body || typeof body.views !== "number") return;
+          stat.setAttribute("data-views", String(body.views));
+          paint(body.views);
+        })
+        .catch(function () {});
+    })();
+  </script>
+  <script>
+    (function () {
+      const stage = document.querySelector(".term-live");
+      if (!stage || !window.ToSnipI18n) return;
+      const modeEl = stage.querySelector(".term-mode");
+      const titleEl = stage.querySelector(".term-title");
+      const promptEl = stage.querySelector(".prompt");
+      const statusEl = stage.querySelector(".term-status-label");
+      const meterEl = stage.querySelector(".term-meter span");
+      const typedEl = stage.querySelector(".typed");
+      const captionEl = document.querySelector(".stage-caption");
+      const toolPath = "C:\\ToSnip\\a1b2c3.jpg";
+      const webLink = "https://tosnip.com/v/a1b2c3";
+      const scenes = [
+        {
+          mode: "demoModePs",
+          title: "demoTitleTerm",
+          caption: "demoCaptionTool",
+          prompt: "PS C:\\work> ",
+          phases: [
+            { label: "demoPaste", caption: "demoCaptionPaste", meter: 0, indeterminate: true, hold: 700 },
+            { label: "demoScaling", caption: "demoCaptionTool", meter: 0, indeterminate: true, hold: 700 },
+            { label: "demoSaving", caption: "demoCaptionTool", meter: 70, hold: 450 },
+            { label: "demoSaved", caption: "demoCaptionTool", meter: 100, type: toolPath, hold: 1400 },
+          ],
+        },
+        {
+          mode: "demoModeCmd",
+          title: "demoTitleTerm",
+          caption: "demoCaptionCmd",
+          prompt: "C:\\work> ",
+          phases: [
+            { label: "demoPaste", caption: "demoCaptionPaste", meter: 0, indeterminate: true, hold: 650 },
+            { label: "demoSaving", caption: "demoCaptionCmd", meter: 70, hold: 450 },
+            { label: "demoSaved", caption: "demoCaptionCmd", meter: 100, type: toolPath, hold: 1400 },
+          ],
+        },
+        {
+          mode: "demoModeCli",
+          title: "demoTitleCli",
+          caption: "demoCaptionWeb",
+          prompt: "> ",
+          phases: [
+            { label: "demoPaste", caption: "demoCaptionPaste", meter: 0, indeterminate: true, hold: 650 },
+            { label: "uploading", caption: "demoCaptionWeb", meter: 0, indeterminate: true, hold: 650 },
+            { label: "uploading", caption: "demoCaptionWeb", meter: 100, hold: 400 },
+            { label: "uploaded", caption: "demoCaptionWeb", meter: 100, type: webLink, hold: 1600 },
+          ],
+        },
+      ];
+      let stopped = false;
+      let timer = 0;
+
+      function say(el, key) {
+        if (!el || !key) return;
+        el.dataset.i18n = key;
+        el.dataset.i18nHtml = "text";
+        el.textContent = window.ToSnipI18n.t(key);
+      }
+
+      function wait(ms) {
+        return new Promise((resolve) => { timer = setTimeout(resolve, ms); });
+      }
+
+      function paintMeter(phase) {
+        if (phase.indeterminate) {
+          meterEl.classList.add("indeterminate");
+          meterEl.style.width = "";
+          return;
+        }
+        meterEl.classList.remove("indeterminate");
+        meterEl.style.width = phase.meter + "%";
+      }
+
+      function followCaret() {
+        const line = typedEl.parentElement;
+        if (line) line.scrollLeft = line.scrollWidth;
+      }
+
+      async function typeText(text) {
+        typedEl.textContent = "";
+        followCaret();
+        const step = text.length > 48 ? 16 : 28;
+        for (let index = 1; index <= text.length; index += 1) {
+          if (stopped) return;
+          typedEl.textContent = text.slice(0, index);
+          followCaret();
+          await wait(step);
+        }
+      }
+
+      function replaySnip() {
+        stage.querySelectorAll(".snip-rect, .snip-mouse").forEach((node) => {
+          node.style.animation = "none";
+          void node.offsetWidth;
+          node.style.animation = "";
+        });
+      }
+
+      async function run() {
+        let index = 0;
+        while (!stopped) {
+          stage.classList.add("is-snip");
+          stage.classList.remove("is-term");
+          say(captionEl, "demoCaptionCapture");
+          replaySnip();
+          await wait(2500);
+          if (stopped) return;
+          const scene = scenes[index % scenes.length];
+          stage.classList.remove("is-snip");
+          stage.classList.add("is-term");
+          say(modeEl, scene.mode);
+          say(titleEl, scene.title);
+          promptEl.textContent = scene.prompt;
+          typedEl.textContent = "";
+          followCaret();
+          for (const phase of scene.phases) {
+            if (stopped) return;
+            say(statusEl, phase.label);
+            say(captionEl, phase.caption || scene.caption);
+            paintMeter(phase);
+            if (phase.type) await typeText(phase.type);
+            else typedEl.textContent = "";
+            await wait(phase.hold);
+          }
+          index += 1;
+        }
+      }
+
+      window.addEventListener("spaceur-lang", () => {
+        say(modeEl, modeEl.dataset.i18n);
+        say(titleEl, titleEl.dataset.i18n);
+        say(statusEl, statusEl.dataset.i18n);
+        say(captionEl, captionEl.dataset.i18n);
+      });
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        stage.classList.remove("is-snip");
+        stage.classList.add("is-term");
+        say(modeEl, "demoModePs");
+        say(titleEl, "demoTitleTerm");
+        say(statusEl, "demoSaved");
+        say(captionEl, "demoCaptionTool");
+        promptEl.textContent = "PS C:\\work> ";
+        meterEl.classList.remove("indeterminate");
+        meterEl.style.width = "100%";
+        typedEl.textContent = toolPath;
+        followCaret();
+        return;
+      }
+      run();
+    })();
+  </script>
+  <script>
+    (function () {
+      const statusEl = document.getElementById("quick-status");
+      function paintText(el, key) {
+        el.dataset.i18n = key;
+        el.dataset.i18nHtml = "text";
+        el.textContent = window.ToSnipI18n.t(key);
+      }
+      function commandText(field) {
+        return (field.value || field.textContent).trim();
+      }
+      function selectField(field) {
+        field.focus();
+        if (typeof field.select === "function") {
+          field.select();
+          return;
+        }
+        const range = document.createRange();
+        range.selectNodeContents(field);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+      async function copyCommand(field, button) {
+        selectField(field);
+        try {
+          await navigator.clipboard.writeText(commandText(field));
+          paintText(button, "copied");
+          paintText(statusEl, field.dataset.copiedKey);
+          statusEl.className = "quick-status ready";
+        } catch (e) {
+          paintText(statusEl, "copyManual");
+          statusEl.className = "quick-status error";
+        }
+      }
+      for (const button of document.querySelectorAll(".copy")) {
+        const field = document.getElementById(button.dataset.for);
+        field.addEventListener("focus", () => selectField(field));
+        button.addEventListener("click", () => copyCommand(field, button));
+      }
+    })();
+  </script>
+</body>
+</html>

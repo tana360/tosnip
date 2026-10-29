@@ -1,0 +1,27 @@
+{
+  "name": "tosnip",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-27",
+  "compatibility_flags": ["nodejs_compat"],
+  "account_id": "dda96be4a65314a4b5d8bb4372f95a5f",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "tosnip.com", "custom_domain": true },
+    { "pattern": "www.tosnip.com", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": false
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "IMAGES",
+      "id": "6df93266a25b44d4b7c8a1cbd77a7648"
+    }
+  ]
+}
