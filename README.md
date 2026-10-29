@@ -24,6 +24,15 @@ Uninstall:
 irm https://tosnip.com/uninstall.ps1 | iex
 ```
 
+Scoop does not include ToSnip in its default bucket. Add this repository, then install:
+
+```powershell
+scoop bucket add tosnip https://github.com/tana360/tosnip
+scoop install tosnip
+```
+
+`scoop uninstall tosnip` stops the helper and deletes the marked pictures in `C:\ToSnip`.
+
 Then press Win + Shift + S, focus CMD, PowerShell, or Windows Terminal, and press Ctrl+V. The helper saves a JPEG in `C:\ToSnip` and types that path. Nothing from this path is uploaded. Instructions are at [https://tosnip.com/tool/](https://tosnip.com/tool/).
 
 ## On the web
@@ -65,3 +74,12 @@ irm https://tosnip.com/install.ps1 | Out-File install.ps1; notepad install.ps1
 ```
 
 ถอนการติดตั้งด้วย `irm https://tosnip.com/uninstall.ps1 | iex` วิธีใช้ทั้งหมดอยู่ที่ [https://tosnip.com/tool/](https://tosnip.com/tool/)
+
+ถ้าใช้ Scoop ให้เพิ่มที่เก็บนี้ก่อน แล้วค่อยติดตั้ง
+
+```powershell
+scoop bucket add tosnip https://github.com/tana360/tosnip
+scoop install tosnip
+```
+
+`scoop uninstall tosnip` หยุดตัวช่วยและลบรูปที่มีเครื่องหมายใน `C:\ToSnip`
